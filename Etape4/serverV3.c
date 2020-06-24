@@ -142,7 +142,7 @@ void *handle_client(void *arg){
 					printf("%s -> %s\n", buff_out, cli->name);
 				}
 			}
-		} else if (receive == 0 || strcmp(buff_out, "exit") == 0){
+		} else if (receive == 0 || strcmp(buff_out, "quit") == 0){
 			sprintf(buff_out, "%s has left\n", cli->name);
 			printf("%s", buff_out);
 			send_message(buff_out, cli->uid);
