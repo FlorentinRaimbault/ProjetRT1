@@ -44,7 +44,7 @@ void send_msg_handler() {
     fgets(message, LENGTH, stdin);
     str_trim_lf(message, LENGTH);
 
-    if (strcmp(message, "exit") == 0) {
+    if (strcmp(message, "quit") == 0) {
 			break;
     } else {
       sprintf(buffer, "%s: %s\n", name, message);
